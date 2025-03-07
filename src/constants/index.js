@@ -75,3 +75,9 @@ export const reviews = [
         feedback: "The product not only meet but exceeded my expectation. I will definately be a returning customer"
     }
 ];
+
+export const socialHandles = [
+    facebook,
+    twitter,
+    instagram
+]
