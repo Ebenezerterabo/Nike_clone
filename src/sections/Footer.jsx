@@ -34,7 +34,7 @@ export default function Footer() {
             </section>
             <div className="flex align-center justify-center mt-2 pb-2">
                 <img src={copyrightSign} alt="copyright" width={12} height={12}/>
-                <p className="ml-2 text-slate-300">Jeybenz technologies</p>
+                <p className="ml-2 text-slate-300">Jeybenz technologies 2025</p>
             </div>
         </footer>
     )
