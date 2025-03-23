@@ -1,42 +1,31 @@
-import Nav from './components/Nav';
-import Hero from './sections/Hero';
-import ProductService from './sections/ProductService';
-import ProductQuality from './sections/ProductQuality';
-import Services from './sections/Services';
-import SpecialOffer from './sections/SpecialOffer';
-import CustomerReviews from './sections/CustomerReviews';
-import Subscribe from './sections/Subscribe';
-import Footer from './sections/Footer';
+
+import { createBrowserRouter, 
+  RouterProvider, 
+  Route,createRoutesFromElements
+} from 'react-router';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import Products from './pages/Products';
+import Contact from './pages/Contact';
+import RootLayout from './layout/RootLayout';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+        <Route path='about' element={<AboutUs />} />
+        <Route path='products' element={<Products />}/>
+        <Route path='products/:productId' element={<ProductDetails />} />
+        <Route path='contact' element={<Contact />} />
+      </Route>
+    )
+  );
+
   return (
-    <main>
-      <Nav />
-      <section className="container mx-auto max-sm:px-8">
-        <Hero />
-      </section>
-      <section className='w-full'>
-        <ProductService />
-      </section>
-      <section>
-        <ProductQuality />
-      </section>
-      <section>
-        <Services />
-      </section>
-      <section>
-        <SpecialOffer />
-      </section>
-      <section>
-        <CustomerReviews />
-      </section>
-      <section>
-        <Subscribe />
-      </section>
-      <section className="bg-black">
-        <Footer />
-      </section>
-    </main>
+    <RouterProvider router={router} />
   )
 }
 

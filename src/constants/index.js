@@ -2,10 +2,10 @@ import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, footerLogo, headerL
 import {truckFast, star, arrowRight, chevronLeft, cheveronRight, facebook, instagram, twitter, support, shieldTick, copyrightSign} from "../assets/icons"
 
 export const navLinks = [
-    {href: "#home", label: "Home"},
-    {href: "#about", label: "About Us"},
-    {href: "#menu", label: "Products"},
-    {href: "#contact", label: "Contact Us"}
+    {href: "/", label: "Home"},
+    {href: "/about", label: "About Us"},
+    {href: "/products", label: "Products"},
+    {href: "/contact", label: "Contact Us"}
 ];
 
 export const shoes = [
@@ -22,24 +22,93 @@ export const statistics = [
 
 export const products = [
     {
+        id: 1,
         imgURL: shoe4,
         name: "Nike Air Jordan-01",
-        price: "$200.20"
+        price: "$200.20",
+        rating: "(4.5)",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum \
+        dolor sit amet consectetur adipisicing elit. Quisquam, quae. dolor sit amet consectetur adipisicing eli"
+
     },
     {
+        id: 2,
         imgURL: shoe5,
         name: "Nike Air Jordan-10",
-        price: "$210.20"
+        price: "$210.20",
+        rating: "(4.0)",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum \
+        dolor sit amet consectetur adipisicing elit. Quisquam, quae. dolor sit amet consectetur adipisicing eli"
     },
     {
+        id: 3,
         imgURL: shoe6,
         name: "Nike Air Jordan-100",
-        price: "$220.20"
+        price: "$220.20",
+        rating: "(3.0)",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum \
+        dolor sit amet consectetur adipisicing elit. Quisquam, quae. dolor sit amet consectetur adipisicing eli"
     },
     {
+        id: 4,
         imgURL: shoe7,
         name: "Nike Air Jordan-001",
-        price: "$230.20"
+        price: "$230.20",
+        rating: "(3.5)",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum \
+        dolor sit amet consectetur adipisicing elit. Quisquam, quae. dolor sit amet consectetur adipisicing eli"
+    }
+];
+
+export const productList = [
+    {
+        id: 1,
+        imgURL: shoe4,
+        name: "Nike Air Jordan-01",
+        price: "$200.20",
+        rating: "(4.5)"
+    },
+    {
+        id: 2,
+        imgURL: shoe5,
+        name: "Nike Air Jordan-10",
+        price: "$210.20",
+        rating: "(4.0)"
+    },
+    {
+        id: 3,
+        imgURL: shoe6,
+        name: "Nike Air Jordan-100",
+        price: "$220.20",
+        rating: "(3.0)"
+    },
+    {
+        id: 4,
+        imgURL: shoe7,
+        name: "Nike Air Jordan-001",
+        price: "$230.20",
+        rating: "(3.5)"
+    },
+    {
+        id: 5,
+        imgURL: bigShoe1,
+        name: "Nike Air Jordan-101",
+        price: "$200.20",
+        rating: "(4.5)"
+    },
+    {
+        id: 6,
+        imgURL: bigShoe2,
+        name: "Nike Air Jordan-150",
+        price: "$300.20",
+        rating: "(4.0)"
+    },
+    {
+        id: 7,
+        imgURL: bigShoe3,
+        name: "Nike Air Jordan-200",
+        price: "$430.20",
+        rating: "(3.0)"
     }
 ];
 

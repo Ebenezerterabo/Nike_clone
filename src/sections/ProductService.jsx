@@ -1,6 +1,9 @@
 import ProductCard from '../components/ProductCard'
 import {products} from '../constants'
+import { Link } from 'react-router'
+import { useParams } from 'react-router'
 export default function ProductService() {
+    const {productId} = useParams();
     return (
         <section className='container mx-auto mt-10 md:mt-35 px-10 py-5'>
             <div className='max-w-[300px]'>
@@ -12,7 +15,7 @@ export default function ProductService() {
             <div className='grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 w-fit gap-4'>
                 {products.map((product, index) => (
                     <div key={index}>
-                        <ProductCard product={product}/>
+                        <Link to={`products/${product.id}`}><ProductCard product={product}/></Link>
                     </div>
                 ))}
             </div>
